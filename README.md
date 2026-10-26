@@ -1,5 +1,9 @@
 # 猿媒BOT MCP · DeepSeek Harness 插件
 
+> 产品文档与完整接入说明：https://github.com/CN-Jayden/yuanmei-bot-docs
+>
+> 这个仓库只负责 DeepSeek Harness 插件安装，不包含猿媒BOT 账号、知识库或业务数据。
+
 在 DeepSeek Harness（DSH）里预置猿媒BOT MCP，安装后即可让 Agent 使用：
 
 - `whoami`：验证令牌
