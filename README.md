@@ -26,8 +26,14 @@
 
 ### 从 npm 安装（发布后）
 
+```text
+插件 → 添加插件 → 填 https://github.com/CN-Jayden/yuanmei-bot-dsh-mcp
+```
+
+或命令行（先确认 profile）：
+
 ```bash
-dsh plugin --profile web add yuanmei-bot-dsh-mcp
+dsh plugin --profile <profile> add https://github.com/CN-Jayden/yuanmei-bot-dsh-mcp
 ```
 
 ### 从本仓库安装
@@ -35,7 +41,7 @@ dsh plugin --profile web add yuanmei-bot-dsh-mcp
 ```bash
 git clone https://github.com/CN-Jayden/yuanmei-bot-dsh-mcp.git
 cd yuanmei-bot-dsh-mcp
-dsh plugin --profile web add link:$(pwd)
+dsh plugin --profile <profile> add link:$(pwd)
 ```
 
 ### 设置令牌
