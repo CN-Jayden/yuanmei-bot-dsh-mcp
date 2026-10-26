@@ -1,0 +1,17 @@
+# 猿媒BOT MCP 的 DSH bundle 补丁。
+# 安装到 web profile 后，会注册一个 streamable-http MCP 客户端。
+# 令牌通过环境变量 YUANMEI_MCP_TOKEN 提供，避免把长期令牌写进仓库。
+- insert:
+    - id: yuanmei-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: yuanmei
+        transport: streamable-http
+        url: https://chatbot.apetd.com/mcp
+        headers:
+          Authorization: js:process.env.YUANMEI_MCP_TOKEN
+        reconnect:
+          enabled: true
+          initialDelayMs: 1000
+          maxDelayMs: 30000
+          maxAttempts: 10

@@ -1,0 +1,39 @@
+{
+  "name": "yuanmei-bot-dsh-mcp",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：预置猿媒BOT MCP 服务（streamable-http），安装后即可在 DSH 中调用企微群消息与发送工具。",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CN-Jayden/yuanmei-bot-dsh-mcp.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "mcp",
+    "wecom",
+    "yuanmei"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  }
+}
